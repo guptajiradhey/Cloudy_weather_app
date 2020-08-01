@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/daniel">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearlayout"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="Change city :-"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/changeCityButton"
+                android:layout_width="wrap_content"
+                android:layout_height="95dp"
+                android:layout_marginLeft="10dp"
+
+                android:layout_marginRight="10dp"
+                android:background="#6719489E"
+
+
+                android:contentDescription="@string/change_city_description"
+
+                android:cropToPadding="true"
+                android:src="@drawable/change_city_symbol" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tempTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/framelayuot"
+
+
+            android:layout_below="@+id/linearlayout"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal|top"
+            android:text="@string/default_temp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="?attr/colorBackgroundFloating"
+            android:textSize="90sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:id="@+id/framelayuot"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_above="@+id/weathertype"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentLeft="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp">
+
+
+            <ImageView
+                android:id="@+id/weatherSymbolIV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/weather_description"
+
+                android:src="@drawable/dunno" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/weathertype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/locationTV"
+            android:layout_marginBottom="0dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Weather Type"
+
+            android:textColor="?attr/colorBackgroundFloating"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/locationTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:padding="10sp"
+            android:text="@string/default_location"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="?attr/colorBackgroundFloating"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
