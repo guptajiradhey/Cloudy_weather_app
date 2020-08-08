@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
         mTemperatureLabel = findViewById(R.id.tempTV);
         ImageButton changeCityButton = findViewById(R.id.changeCityButton);
         mweathertype = findViewById(R.id.weathertype);
-        Toast.makeText(getApplicationContext(),"Start GPS",Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(),"Make sure your GPS is On",Toast.LENGTH_SHORT).show();
 
 
         changeCityButton.setOnClickListener(new View.OnClickListener() {
